@@ -14,6 +14,12 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
 ✯ Bᴏᴛ Sᴇʀᴠᴇʀ: VPS
 ✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: [ Sᴛᴀʙʟᴇ ]</b>"""
+    
+    CAPTION = """📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code>
+╭─────── • ◆ • ───────╮
+» ɢʀᴏᴜᴘ  :  <a href="https://t.me/Cinema_kottaka_group">𝙲𝚒𝚗𝚎𝚖𝚊 𝙺𝚘𝚝𝚝𝚊𝚔𝚊</a>  «
+» ᴜᴘᴅᴀᴛᴇꜱ :  <a href="https://t.me/Cinema_kottaka_official">𝙲𝚒𝚗𝚎𝚖𝚊 𝙺𝚘𝚝𝚝𝚊𝚔𝚊</a>«
+╰─────── • ◆ • ───────╯"""
 
     SUPPORT_TXT = """ Sᴜᴘᴘᴏʀᴛ & Uᴘᴅᴀᴛᴇꜱ 💥"""
     
