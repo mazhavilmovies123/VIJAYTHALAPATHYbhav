@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔖 Sᴜᴘᴘᴏʀᴛ 🔖', callback_data='supporte')
             ],[
-            InlineKeyboardButton('🚦Exᴛʀᴀ🚦', callback_data='help'),
+            InlineKeyboardButton('⚙️Exᴛʀᴀ⚙️', callback_data='help'),
             InlineKeyboardButton('🎗Aʙᴏᴜᴛ🎗', callback_data='about')
             ],[
             InlineKeyboardButton('✖️ ᴄʟᴏꜱᴇ ✖️', callback_data='close_data')
@@ -72,7 +72,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔖 Sᴜᴘᴘᴏʀᴛ 🔖', callback_data='supporte')
             ],[
-            InlineKeyboardButton('🚦Exᴛʀᴀ🚦', callback_data='help'),
+            InlineKeyboardButton('⚙️Exᴛʀᴀ⚙️', callback_data='help'),
             InlineKeyboardButton('🎗Aʙᴏᴜᴛ🎗', callback_data='about')
             ],[
             InlineKeyboardButton('✖️ ᴄʟᴏꜱᴇ ✖️', callback_data='close_data')
