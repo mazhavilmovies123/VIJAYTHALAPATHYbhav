@@ -458,14 +458,10 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
-                ],
+                ]
             )
 
-    btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !", callback_data=f"send_fall#files#{offset}")
-    ])
     offset = 0
-
     btn.append(        [
             InlineKeyboardButton(
                 text="↺ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ​↻",
@@ -1231,7 +1227,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = script.NOR_TXT.format(message.from_user.mention, search, total_results)
+        cap = script.NOR_TXT.format(message.from_user.first_name, search, total_results)
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
