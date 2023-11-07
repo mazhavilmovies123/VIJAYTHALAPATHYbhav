@@ -73,7 +73,7 @@ class Bot(Client):
         tz = pytz.timezone('Asia/Kolkata')
         today = date.today()
         now = datetime.now(tz)
-        time = now.strftime("%H:%M:%S %p")
+        time = now.strftime("%I:%M:%S %p")
         await self.send_message(chat_id=LOG_CHANNEL, text=f"@{me.username} Rᴇsᴛᴀʀᴛᴇᴅ !\n\n📅 Dᴀᴛᴇ : {today}\n⏰ Tɪᴍᴇ : {time}\n🌐 Tɪᴍᴇᴢᴏɴᴇ : Asia/Kolkata")
         #logging.info(LOG_STR)
 
