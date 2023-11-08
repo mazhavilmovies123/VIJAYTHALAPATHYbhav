@@ -1,10 +1,11 @@
-import asyncio, os, sys
+import sys, asyncio 
+from os import environ, execle, system
+from pyrogram import Client, filters, enums
 from info import ADMINS
-from pyrogram import Client, filters
 
-@Client.on_message(filters.command("restart") & filters.user(ADMINS))
-async def restart_bot(bot, msg):
-    await msg.reply("Rᴇꜱᴛᴀᴛɪɴɢ........")
+@Client.on_message(filters.command(['restart']) & filters.user(ADMINS))
+async def restart(client, message):
+    await message.reply_text("Rᴇꜱᴛᴀᴛɪɴɢ........")
     await asyncio.sleep(2)
-    await sts.delete()
-    os.execl(sys.executable, sys.executable, *sys.argv)
+    system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
+    execle(sys.executable, sys.executable, "bot.py", environ)
