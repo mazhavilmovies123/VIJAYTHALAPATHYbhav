@@ -1,7 +1,9 @@
+import sys
+import asyncio
+from os import environ, execle, system
 import os
 import logging
 import random
-import asyncio
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -462,6 +464,15 @@ async def settings(client, message):
         )
 
 
+@Client.on_message(filters.command('restart') & filters.user(ADMINS))
+async def restart_bot(client, message):
+    msg = await message.reply_text(
+        text="<b>Bot Restarting ...</b>"
+    )
+    await asyncio.sleep(5)
+    await msg.edit("<b>Restart Successfully Completed ✅</b>")
+    system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
+    execle(sys.executable, sys.executable, "bot.py", environ)
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
